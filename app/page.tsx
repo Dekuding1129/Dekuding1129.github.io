@@ -8,6 +8,7 @@ const projects = [
     impact:
       "Built to explore how motion, state, accessibility, and product storytelling can work together without a heavy framework.",
     tags: ["Three.js", "JavaScript", "Responsive UX", "Node tests"],
+    live: "https://dekuding1129.github.io/merch-game/",
     source: "https://github.com/Dekuding1129/merch-game",
     className: "project-visual--loot",
     visual: (
@@ -28,6 +29,7 @@ const projects = [
     impact:
       "Translated a distinct visual direction into an expressive interface using gradients, typography, glow, and motion in plain CSS.",
     tags: ["HTML", "CSS", "JavaScript", "Art direction"],
+    live: "https://dekuding1129.github.io/mizrach-band/",
     source: "https://github.com/Dekuding1129/mizrach-band",
     className: "project-visual--mizrach",
     visual: (
@@ -48,6 +50,7 @@ const projects = [
     impact:
       "A compact exercise in visual rhythm, animation timing, and turning a simple idea into a polished browser moment.",
     tags: ["Creative coding", "CSS motion", "JavaScript", "Mobile-first"],
+    live: "https://dekuding1129.github.io/ice-cream-invitation/",
     source: "https://github.com/Dekuding1129/ice-cream-invitation",
     className: "project-visual--icecream",
     visual: (
@@ -129,9 +132,14 @@ export default function Home() {
                 <ul className="tag-list" aria-label={`${project.name} technologies`}>
                   {project.tags.map((tag) => <li key={tag}>{tag}</li>)}
                 </ul>
-                <a className="text-link" href={project.source} target="_blank" rel="noreferrer">
-                  View source <span aria-hidden="true">↗</span>
-                </a>
+                <div className="project-links">
+                  <a className="text-link text-link--primary" href={project.live} target="_blank" rel="noreferrer">
+                    View live site <span aria-hidden="true">↗</span>
+                  </a>
+                  <a className="text-link" href={project.source} target="_blank" rel="noreferrer">
+                    View source <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
               </div>
             </article>
           ))}

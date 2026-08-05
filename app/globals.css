@@ -67,6 +67,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .tag-list li { border: 1px solid rgba(13,13,12,.35); border-radius: 100px; padding: 7px 11px; font: 10px monospace; text-transform: uppercase; }
 .text-link { display: inline-flex; gap: 32px; align-items: center; padding-bottom: 8px; border-bottom: 1px solid currentColor; font: 12px monospace; letter-spacing: .08em; text-transform: uppercase; }
 .text-link span { transition: transform .2s; }.text-link:hover span { transform: translate(3px,-3px); }
+.project-links { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px; }
+.project-links .text-link { gap: 18px; }
+.text-link--primary { color: #9b4e22; font-weight: 700; }
 
 .project-visual--loot { background: #13191a; color: #e4e87b; }
 .project-visual--loot::before { content:""; position:absolute; inset:0; background: repeating-linear-gradient(90deg, transparent 0 74px, rgba(228,232,123,.06) 75px), repeating-linear-gradient(0deg, transparent 0 74px, rgba(228,232,123,.06) 75px); }
