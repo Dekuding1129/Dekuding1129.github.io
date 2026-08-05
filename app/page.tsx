@@ -46,10 +46,10 @@ const projects = [
     name: "ICE CREAM INVITATION",
     type: "Playful interactive experience",
     description:
-      "A self-contained invitation page with responsive composition, animated decorations, and a lightweight celebratory interaction.",
+      "A self-contained Dess Tra Ice Cream Kit invitation with a one-line hero, playful No-button interaction, setup date and time scheduling, and a fireworks confirmation moment.",
     impact:
-      "A compact exercise in visual rhythm, animation timing, and turning a simple idea into a polished browser moment.",
-    tags: ["Creative coding", "CSS motion", "JavaScript", "Mobile-first"],
+      "A compact exercise in visual rhythm, mobile performance, accessible form flow, and turning a simple idea into a polished browser moment.",
+    tags: ["Creative coding", "CSS motion", "JavaScript", "Mobile-first", "Forms"],
     live: "https://dekuding1129.github.io/ice-cream-invitation/",
     source: "https://github.com/Dekuding1129/ice-cream-invitation",
     className: "project-visual--icecream",
