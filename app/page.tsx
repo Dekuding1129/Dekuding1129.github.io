@@ -162,6 +162,19 @@ export default function Home() {
         <div className="section-label">About / approach</div>
         <div className="about-grid">
           <h2 id="about-title">Good ideas deserve<br /><em>thoughtful execution.</em></h2>
+          <figure className="about-portrait">
+            <div className="about-portrait__frame">
+              <img
+                src="/john-gulliver.jpg"
+                alt="Portrait of John Gulliver"
+                width="460"
+                height="460"
+                loading="lazy"
+              />
+              <span aria-hidden="true">JG / 2026</span>
+            </div>
+            <figcaption>John Gulliver — Philippines</figcaption>
+          </figure>
           <div className="about-copy">
             <p className="about-lead">
               I&apos;m a frontend developer who enjoys the space between visual design
