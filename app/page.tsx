@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ProjectPreview from "./project-preview";
 
 const projects = [
@@ -78,6 +79,13 @@ export default function Home() {
             and playful digital products—turning ideas into experiences people can
             actually use.
           </p>
+          <a className="hero-signal" href="#work" aria-label="View the LOOT featured project">
+            <span className="hero-signal__label">Featured / 01</span>
+            <span className="hero-signal__image">
+              <Image src="/project-previews/loot.png" alt="" fill sizes="320px" priority />
+            </span>
+            <strong>LOOT <em>/ interactive merch</em></strong>
+          </a>
           <a className="circle-link" href="#work" aria-label="Explore selected work">
             <span>Explore<br />work</span>
             <b aria-hidden="true">↓</b>
