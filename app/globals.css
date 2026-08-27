@@ -57,8 +57,16 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .project:nth-child(even) { grid-template-columns: minmax(300px, .75fr) minmax(0, 1.65fr); }
 .project:nth-child(even) .project-visual { order: 2; }
 .project-visual { min-height: 570px; position: relative; overflow: hidden; }
-.project-preview-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; filter: saturate(.9) contrast(1.04); transition: transform .45s ease, filter .45s ease; }
-.project:hover .project-preview-image { transform: scale(1.025); filter: saturate(1) contrast(1.04); }
+.project-preview { position:absolute; inset:0; overflow:hidden; background:linear-gradient(110deg,#d9d4c9 8%,#f4f0e7 18%,#d9d4c9 33%); background-size:220% 100%; animation:preview-loading 1.35s linear infinite; }
+.project-preview__loader { position:absolute; inset:0; z-index:1; display:grid; place-items:center; color:#65625d; font:10px monospace; letter-spacing:.14em; text-transform:uppercase; transition:opacity .3s ease; }
+.project-preview__loader::after { content:""; width:28px; height:28px; margin-left:10px; border:1px solid currentColor; border-top-color:transparent; border-radius:50%; animation:preview-spinner .8s linear infinite; }
+.project-preview.is-loaded { animation:none; }
+.project-preview.is-loaded .project-preview__loader { opacity:0; pointer-events:none; }
+.project-preview-image { position:absolute; inset:0; z-index:0; width:100%; height:100%; object-fit:cover; object-position:center; opacity:0; filter:saturate(.9) contrast(1.04); transition:opacity .35s ease, transform .45s ease, filter .45s ease; }
+.project-preview.is-loaded .project-preview-image { opacity:1; }
+.project:hover .project-preview-image,.supporting-project:hover .project-preview-image { transform:scale(1.025); filter:saturate(1) contrast(1.04); }
+@keyframes preview-loading { to { background-position:-220% 0; } }
+@keyframes preview-spinner { to { transform:rotate(360deg); } }
 .project-number, .project-corner { position: absolute; z-index: 2; font: 10px monospace; letter-spacing: .12em; }
 .project-number { top: 24px; left: 25px; }.project-corner { bottom: 22px; right: 25px; }
 .project-copy h3 { margin: 12px 0 24px; font-size: clamp(42px, 4.5vw, 72px); line-height: .92; letter-spacing: -.055em; }

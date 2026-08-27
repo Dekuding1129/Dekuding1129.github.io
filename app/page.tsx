@@ -1,4 +1,4 @@
-import Image from "next/image";
+import ProjectPreview from "./project-preview";
 
 const projects = [
   {
@@ -13,7 +13,7 @@ const projects = [
     live: "https://dekuding1129.github.io/merch-game/",
     source: "https://github.com/Dekuding1129/merch-game",
     className: "project-visual--loot",
-    visual: <Image className="project-preview-image" src="/project-previews/loot.png" alt="Preview of the LOOT interactive 3D merchandise storefront" fill sizes="(max-width: 900px) 100vw, 60vw" />,
+    visual: <ProjectPreview src="/project-previews/loot.png" alt="Preview of the LOOT interactive 3D merchandise storefront" sizes="(max-width: 900px) 100vw, 60vw" />,
   },
   {
     number: "02",
@@ -27,7 +27,7 @@ const projects = [
     live: "https://dekuding1129.github.io/mizrach-band/",
     source: "https://github.com/Dekuding1129/mizrach-band",
     className: "project-visual--mizrach",
-    visual: <Image className="project-preview-image" src="/project-previews/mizrach-pinaz.png" alt="Preview of the MIZRACH PINAZ music and culture homepage" fill sizes="(max-width: 900px) 100vw, 60vw" />,
+    visual: <ProjectPreview src="/project-previews/mizrach-pinaz.png" alt="Preview of the MIZRACH PINAZ music and culture homepage" sizes="(max-width: 900px) 100vw, 60vw" />,
   },
   {
     number: "03",
@@ -41,7 +41,7 @@ const projects = [
     live: "https://dekuding1129.github.io/ice-cream-invitation/",
     source: "https://github.com/Dekuding1129/ice-cream-invitation",
     className: "project-visual--icecream",
-    visual: <Image className="project-preview-image" src="/project-previews/ice-cream-invitation.png" alt="Preview of the Ice Cream Invitation interactive page" fill sizes="(max-width: 900px) 100vw, 60vw" />,
+    visual: <ProjectPreview src="/project-previews/ice-cream-invitation.png" alt="Preview of the Ice Cream Invitation interactive page" sizes="(max-width: 900px) 100vw, 60vw" />,
   },
 ] as const;
 
@@ -129,13 +129,10 @@ export default function Home() {
 
         <article className="supporting-project">
           <div className="supporting-project__visual">
-            <Image
+            <ProjectPreview
               src="/princess-jane-preview.png"
               alt="Screenshot of the Princess Jane Diaz Raagas portfolio homepage"
-              width="900"
-              height="900"
               sizes="(max-width: 900px) 100vw, 55vw"
-              loading="eager"
             />
             <span className="supporting-project__number">04</span>
             <span className="supporting-project__visual-corner">JOHN / FRONTEND</span>
