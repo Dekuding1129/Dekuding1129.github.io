@@ -74,6 +74,7 @@ export default function Home() {
         <nav aria-label="Main navigation">
           <a href="#work">Work</a>
           <a href="#about">About</a>
+          <a href="/john-gulliver-resume.pdf" download>Résumé</a>
           <a href="#contact">Contact</a>
         </nav>
         <a className="header-status" href="mailto:johnlipata112904@gmail.com">
@@ -207,6 +208,9 @@ export default function Home() {
         <h2 id="contact-title">Have a role or an<br />idea in mind?</h2>
         <a className="contact-email" href="mailto:johnlipata112904@gmail.com">
           johnlipata112904@gmail.com <span aria-hidden="true">↗</span>
+        </a>
+        <a className="contact-resume" href="/john-gulliver-resume.pdf" download>
+          Download résumé <span aria-hidden="true">↓</span>
         </a>
         <footer>
           <span>© 2026 John Gulliver</span>

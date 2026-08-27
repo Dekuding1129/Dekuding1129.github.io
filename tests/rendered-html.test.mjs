@@ -30,3 +30,11 @@ test("includes deployable assets and social metadata", async () => {
   assert.match(html, /name="twitter:card" content="summary_large_image"/);
   assert.match(html, /rel="canonical" href="https:\/\/dekuding1129\.github\.io\/?"/);
 });
+
+test("offers a downloadable résumé", async () => {
+  const html = await readFile(new URL("out/index.html", root), "utf8");
+
+  assert.match(html, /href="\/john-gulliver-resume\.pdf"/);
+  assert.match(html, /Download résumé/);
+  await access(new URL("out/john-gulliver-resume.pdf", root));
+});
