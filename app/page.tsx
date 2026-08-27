@@ -151,10 +151,10 @@ export default function Home() {
         <article className="supporting-project">
           <div className="supporting-project__visual">
             <Image
-              src="/princess-jane-profile.png"
-              alt="Princess Jane wearing a white shirt and holding a blue hard hat"
-              width="1106"
-              height="1422"
+              src="/princess-jane-preview.png"
+              alt="Screenshot of the Princess Jane Diaz Raagas portfolio homepage"
+              width="900"
+              height="900"
               sizes="(max-width: 900px) 100vw, 55vw"
               loading="eager"
             />

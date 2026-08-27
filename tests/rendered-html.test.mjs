@@ -13,7 +13,7 @@ test("exports the complete portfolio homepage", async () => {
   assert.match(html, /MIZRACH PINAZ/);
   assert.match(html, /ICE CREAM INVITATION/);
   assert.match(html, /Princess Jane Portfolio/);
-  assert.match(html, /princess-jane-profile\.png/);
+  assert.match(html, /princess-jane-preview\.png/);
   assert.match(html, /johnlipata112904@gmail\.com/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape/);
 
@@ -27,7 +27,7 @@ test("exports the complete portfolio homepage", async () => {
 test("includes deployable assets and social metadata", async () => {
   const html = await readFile(new URL("out/index.html", root), "utf8");
   await access(new URL("out/og.png", root));
-  await access(new URL("out/princess-jane-profile.png", root));
+  await access(new URL("out/princess-jane-preview.png", root));
 
   assert.match(html, /property="og:image"/);
   assert.match(html, /name="twitter:card" content="summary_large_image"/);
