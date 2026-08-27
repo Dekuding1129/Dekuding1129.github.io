@@ -13,14 +13,7 @@ const projects = [
     live: "https://dekuding1129.github.io/merch-game/",
     source: "https://github.com/Dekuding1129/merch-game",
     className: "project-visual--loot",
-    visual: (
-      <div className="loot-object" aria-hidden="true">
-        <span className="loot-orbit loot-orbit--one" />
-        <span className="loot-orbit loot-orbit--two" />
-        <span className="loot-cube"><i /><i /><i /></span>
-        <span className="loot-label">ROTATE / INSPECT</span>
-      </div>
-    ),
+    visual: <Image className="project-preview-image" src="/project-previews/loot.png" alt="Preview of the LOOT interactive 3D merchandise storefront" fill sizes="(max-width: 900px) 100vw, 60vw" />,
   },
   {
     number: "02",
@@ -34,35 +27,21 @@ const projects = [
     live: "https://dekuding1129.github.io/mizrach-band/",
     source: "https://github.com/Dekuding1129/mizrach-band",
     className: "project-visual--mizrach",
-    visual: (
-      <div className="sound-stage" aria-hidden="true">
-        <span className="sound-stage__eyebrow">SLOW ROCK / LIVE</span>
-        <strong>MIZRACH</strong>
-        <span className="sound-stage__line" />
-        <span className="sound-stage__date">LIVE AFTER DARK</span>
-      </div>
-    ),
+    visual: <Image className="project-preview-image" src="/project-previews/mizrach-pinaz.png" alt="Preview of the MIZRACH PINAZ music and culture homepage" fill sizes="(max-width: 900px) 100vw, 60vw" />,
   },
   {
     number: "03",
     name: "ICE CREAM INVITATION",
     type: "Playful interactive experience",
     description:
-      "A self-contained Dess Tra Ice Cream Kit invitation with a one-line hero, playful No-button interaction, setup date and time scheduling, and a fireworks confirmation moment.",
+      "A self-contained Shairene tra Ice cream kit invitation with a one-line hero, playful No-button interaction, setup date and time scheduling, and a fireworks confirmation moment.",
     impact:
       "A compact exercise in visual rhythm, mobile performance, accessible form flow, and turning a simple idea into a polished browser moment.",
     tags: ["Creative coding", "CSS motion", "JavaScript", "Mobile-first", "Forms"],
     live: "https://dekuding1129.github.io/ice-cream-invitation/",
     source: "https://github.com/Dekuding1129/ice-cream-invitation",
     className: "project-visual--icecream",
-    visual: (
-      <div className="ice-card" aria-hidden="true">
-        <span className="ice-card__dot ice-card__dot--one" />
-        <span className="ice-card__dot ice-card__dot--two" />
-        <span className="ice-card__cone">◆</span>
-        <strong>SWEET<br />INVITE</strong>
-      </div>
-    ),
+    visual: <Image className="project-preview-image" src="/project-previews/ice-cream-invitation.png" alt="Preview of the Ice Cream Invitation interactive page" fill sizes="(max-width: 900px) 100vw, 60vw" />,
   },
 ] as const;
 
