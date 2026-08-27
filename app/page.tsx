@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const projects = [
   {
     number: "01",
@@ -147,14 +149,26 @@ export default function Home() {
         </div>
 
         <article className="supporting-project">
-          <div>
+          <div className="supporting-project__visual">
+            <Image
+              src="/princess-jane-profile.png"
+              alt="Princess Jane wearing a white shirt and holding a blue hard hat"
+              width="1106"
+              height="1422"
+              sizes="(max-width: 900px) 100vw, 55vw"
+              loading="eager"
+            />
+            <span className="supporting-project__number">04</span>
+            <span className="supporting-project__visual-corner">JOHN / FRONTEND</span>
+          </div>
+          <div className="supporting-project__copy">
             <span>04 / Supporting work</span>
             <h3>Princess Jane Portfolio</h3>
             <p>A responsive static portfolio with project sections, downloadable resources, and a live GitHub Pages deployment.</p>
-          </div>
-          <div className="supporting-links">
-            <a href="https://dekuding1129.github.io/princess-jane-portfolio/" target="_blank" rel="noreferrer">Live site ↗</a>
-            <a href="https://github.com/Dekuding1129/princess-jane-portfolio" target="_blank" rel="noreferrer">Source ↗</a>
+            <div className="supporting-links">
+              <a href="https://dekuding1129.github.io/princess-jane-portfolio/" target="_blank" rel="noreferrer">Live site ↗</a>
+              <a href="https://github.com/Dekuding1129/princess-jane-portfolio" target="_blank" rel="noreferrer">Source ↗</a>
+            </div>
           </div>
         </article>
       </section>
