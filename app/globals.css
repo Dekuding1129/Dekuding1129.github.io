@@ -62,9 +62,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .project-preview__loader::after { content:""; width:28px; height:28px; margin-left:10px; border:1px solid currentColor; border-top-color:transparent; border-radius:50%; animation:preview-spinner .8s linear infinite; }
 .project-preview.is-loaded { animation:none; }
 .project-preview.is-loaded .project-preview__loader { opacity:0; pointer-events:none; }
-.project-preview-image { position:absolute; inset:0; z-index:0; width:100%; height:100%; object-fit:cover; object-position:center; opacity:0; filter:saturate(.9) contrast(1.04); transition:opacity .35s ease, transform .45s ease, filter .45s ease; }
+.project-preview-image { position:absolute; inset:0; z-index:0; width:100%; height:100%; object-fit:cover; object-position:center; opacity:0; filter:saturate(.9) contrast(1.04); will-change:opacity, transform, filter; transition:opacity .45s ease, transform .75s cubic-bezier(.22,1,.36,1), filter .75s cubic-bezier(.22,1,.36,1); }
 .project-preview.is-loaded .project-preview-image { opacity:1; }
-.project:hover .project-preview-image,.supporting-project:hover .project-preview-image { transform:scale(1.025); filter:saturate(1) contrast(1.04); }
+.project:hover .project-preview-image,.supporting-project:hover .project-preview-image { transform:scale(1.02); filter:saturate(1) contrast(1.04); }
 @keyframes preview-loading { to { background-position:-220% 0; } }
 @keyframes preview-spinner { to { transform:rotate(360deg); } }
 .project-number, .project-corner { position: absolute; z-index: 2; font: 10px monospace; letter-spacing: .12em; }
