@@ -73,6 +73,12 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .project-copy > p:not(.project-type) { color: #55514b; font-size: 16px; line-height: 1.6; }
 .project-type { margin: 0; font: 11px monospace; letter-spacing: .12em; text-transform: uppercase; color: #766f66; }
 .project-impact { padding-top: 18px; border-top: 1px solid rgba(13,13,12,.17); }
+.project-about { margin-top: 24px; padding: 18px 0 4px; border-top: 1px solid rgba(13,13,12,.17); }
+.project-about-label { margin: 0 0 13px; color: #77716a; font: 10px/1.2 monospace; letter-spacing: .12em; text-transform: uppercase; }
+.project-about dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 24px; margin: 0; }
+.project-about dl > div { display: grid; grid-template-columns: 82px minmax(0, 1fr); gap: 10px; font-size: 12px; line-height: 1.45; }
+.project-about dt { color: #77716a; }
+.project-about dd { margin: 0; color: #262421; font-weight: 600; }
 .tag-list { padding: 0; margin: 28px 0 32px; list-style: none; display: flex; flex-wrap: wrap; gap: 7px; }
 .tag-list li { border: 1px solid rgba(13,13,12,.35); border-radius: 100px; padding: 7px 11px; font: 10px monospace; text-transform: uppercase; }
 .text-link { display: inline-flex; gap: 32px; align-items: center; padding-bottom: 8px; border-bottom: 1px solid currentColor; font: 12px monospace; letter-spacing: .08em; text-transform: uppercase; }
@@ -153,6 +159,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .section-shell { padding:90px 20px; }.section-heading h2,.about h2 { font-size:46px; }.project-list { gap:85px; }.project-visual { min-height:390px; }
   .project-copy h3 { font-size:42px; }.ice-card { inset:17% 10%; }.supporting-project { margin-top:90px; }.supporting-project__visual { height:390px; min-height:390px; }.supporting-project__visual img { min-height:0; object-position:center 50%; }.supporting-project__copy { padding:30px 0; }.supporting-links { margin-top:25px; }
   .about-grid { grid-template-columns:1fr; }.about-portrait { max-width:280px; }.about-copy { grid-column:auto; }
+  .project-about dl { grid-template-columns: 1fr; gap: 9px; }
   .capabilities { margin-top:75px; grid-template-columns:1fr; }.capabilities > div,.capabilities > div:not(:first-child) { padding:24px 0; border-right:0; border-bottom:1px solid var(--line); }.capabilities h3 { margin-top:15px; }
   .contact { min-height:720px; padding:80px 20px 25px; }.contact-top span { display:none; }.contact h2 { font-size:58px; }.contact-email { font-size:14px; }.contact footer { grid-template-columns:1fr auto; gap:18px; }.contact footer a:last-child { display:none; }
 }

@@ -10,6 +10,10 @@ test("exports the complete portfolio homepage", async () => {
   assert.match(html, /John Gulliver/);
   assert.match(html, /Creative frontend/);
   assert.match(html, /LOOT/);
+  assert.match(html, /About this project/);
+  assert.match(html, /<dt>Backend<\/dt><dd>Node\.js \/ Vercel<\/dd>/);
+  assert.match(html, /<dt>Database<\/dt><dd>Supabase<\/dd>/);
+  assert.match(html, /<dt>Payments<\/dt><dd>local demo simulator<\/dd>/);
   assert.match(html, /MIZRACH PINAZ/);
   assert.match(html, /ICE CREAM INVITATION/);
   assert.match(html, /Princess Jane Portfolio/);

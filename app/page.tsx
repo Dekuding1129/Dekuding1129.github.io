@@ -10,6 +10,13 @@ const projects = [
     impact:
       "Built to explore how motion, state, accessibility, and product storytelling can work together without a heavy framework.",
     tags: ["Three.js", "JavaScript", "Responsive UX", "Node tests"],
+    about: [
+      ["Frontend", "HTML / CSS / JavaScript"],
+      ["Backend", "Node.js / Vercel"],
+      ["Database", "Supabase"],
+      ["Email", "Brevo SMTP"],
+      ["Payments", "local demo simulator"],
+    ],
     live: "https://dekuding1129.github.io/merch-game/",
     source: "https://github.com/Dekuding1129/merch-game",
     className: "project-visual--loot",
@@ -111,6 +118,19 @@ export default function Home() {
                 <h3>{project.name}</h3>
                 <p>{project.description}</p>
                 <p className="project-impact">{project.impact}</p>
+                {"about" in project && project.about && (
+                  <div className="project-about">
+                    <p className="project-about-label">About this project</p>
+                    <dl>
+                      {project.about.map(([label, value]) => (
+                        <div key={label}>
+                          <dt>{label}</dt>
+                          <dd>{value}</dd>
+                        </div>
+                      ))}
+                    </dl>
+                  </div>
+                )}
                 <ul className="tag-list" aria-label={`${project.name} technologies`}>
                   {project.tags.map((tag) => <li key={tag}>{tag}</li>)}
                 </ul>
