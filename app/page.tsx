@@ -50,6 +50,26 @@ const projects = [
     className: "project-visual--icecream",
     visual: <ProjectPreview src="/project-previews/ice-cream-invitation.png" alt="Preview of the Ice Cream Invitation interactive page" sizes="(max-width: 900px) 100vw, 60vw" />,
   },
+  {
+    number: "04",
+    name: "VIDEO AUTOMATION",
+    type: "Code-driven video pipeline",
+    description:
+      "A reusable Remotion pipeline that turns a storyboard file into narrated 1080x1920 shorts — timed narration, synthesized demos, rigged character, and captions rendered to MP4 plus per-scene stills.",
+    impact:
+      "The same scaffold shipped three series (theory, basics, tech): edit text in storyboard, regenerate audio, render. Tests guard scene cuts, timing, pitch content, and character motion.",
+    tags: ["React", "TypeScript", "Remotion", "Python", "Tests"],
+    about: [
+      ["Define", "storyboard scenes"],
+      ["Audio", "EdgeTTS + local synth"],
+      ["Render", "Remotion 1080x1920 / 30fps"],
+      ["Verify", "tsx + Python tests"],
+    ],
+    live: "https://www.youtube.com/@johngulliverlipata1085",
+    source: "https://github.com/Dekuding1129/music-theory-shorts-remotion",
+    className: "project-visual--shorts",
+    visual: <ProjectPreview src="/project-previews/shorts-automation.png" alt="Still from the automated video shorts pipeline" sizes="(max-width: 900px) 100vw, 60vw" />,
+  },
 ] as const;
 
 export default function Home() {
@@ -101,7 +121,7 @@ export default function Home() {
           <h2 id="work-title">Things I&apos;ve brought<br />to life.</h2>
           <p className="section-intro">
             A selection of frontend experiments spanning 3D commerce, music,
-            creative coding, and responsive web design.
+            creative coding, generative video, and responsive web design.
           </p>
         </div>
 

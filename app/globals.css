@@ -102,6 +102,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .sound-stage__eyebrow,.sound-stage__date { font:10px monospace; letter-spacing:.35em; }.sound-stage__line { width:55%; height:1px; background:#c8793f; margin:24px 0; box-shadow:0 0 15px #c8793f; }
 
 .project-visual--icecream { background: #f3b9bd; color:#522838; }
+.project-visual--shorts { background: #FFF8E8; color: #161616; }
 .project-visual--icecream::before { content:""; position:absolute; inset:0; background: radial-gradient(circle at 20% 25%,#f7e184 0 5px,transparent 6px), radial-gradient(circle at 70% 70%,#e37185 0 4px,transparent 5px), radial-gradient(circle at 82% 20%,#79bda6 0 6px,transparent 7px); background-size:100px 90px,120px 110px,150px 130px; opacity:.7; }
 .ice-card { position:absolute; inset:15% 18%; background:#fff4e7; border:2px solid #522838; box-shadow:14px 14px 0 #522838; display:grid; place-items:center; transform:rotate(-2deg); }
 .ice-card strong { font-family:var(--serif); font-style:italic; font-size:clamp(45px,6vw,86px); line-height:.77; text-align:center; position:relative; z-index:2; }
