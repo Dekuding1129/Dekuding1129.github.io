@@ -55,10 +55,10 @@ const projects = [
     name: "VIDEO AUTOMATION",
     type: "Code-driven video pipeline",
     description:
-      "A reusable Remotion pipeline that turns a storyboard file into narrated 1080x1920 shorts — timed narration, synthesized demos, rigged character, and captions rendered to MP4 plus per-scene stills.",
+      "A reusable Remotion pipeline that turns a storyboard file into narrated 1080x1920 shorts — timed narration, synthesized demos, rigged character, and captions rendered to MP4 plus per-scene stills. Output is vertical-ready for YouTube Shorts and TikTok.",
     impact:
-      "The same scaffold shipped three series (theory, basics, tech): edit text in storyboard, regenerate audio, render. Tests guard scene cuts, timing, pitch content, and character motion.",
-    tags: ["React", "TypeScript", "Remotion", "Python", "Tests"],
+      "The same scaffold shipped three series (theory, basics, tech): edit text in storyboard, regenerate audio, render. Tests guard scene cuts, timing, pitch content, and character motion. Ships with a TikTok upload helper mirroring the YouTube flow.",
+    tags: ["React", "TypeScript", "Remotion", "Python", "Tests", "TikTok"],
     about: [
       ["Define", "storyboard scenes"],
       ["Audio", "EdgeTTS + local synth"],
